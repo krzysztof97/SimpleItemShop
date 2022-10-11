@@ -12,10 +12,12 @@ public class CoinsDisplayController : MonoBehaviour
     void Start()
     {
         text = GetComponent<TextMeshProUGUI>();
+        playerData.OnCoinsChanged += UpdateUI;
+        UpdateUI();
     }
 
     // Update is called once per frame
-    void Update()
+    void UpdateUI()
     {
         text.SetText(playerData.GetCoins().ToString());
     }

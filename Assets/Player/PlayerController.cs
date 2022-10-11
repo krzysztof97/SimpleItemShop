@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    [SerializeField] float speed = 500f;
+    [SerializeField] float speed = 800f;
     [SerializeField] float jumpForce = 500f;
     bool isJumping;
 

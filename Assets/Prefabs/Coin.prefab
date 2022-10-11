@@ -28,8 +28,8 @@ Transform:
   m_GameObject: {fileID: 2317138550888628732}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.2, y: 0.2, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 0.5, y: 0.5, z: 2.5}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -75,12 +75,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 5
-  m_Sprite: {fileID: 21300000, guid: c72d875d2b75fcd458f4e2b0d46b1895, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 161ead2dbb47aa94ca8b69a4e49109fd, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 5.63, y: 5.64}
+  m_Size: {x: 2.24, y: 2.2}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -100,6 +100,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerData: {fileID: 11400000, guid: ec22c7bc8d0cc534b9cd0d3882c4c3fb, type: 2}
   coinsToIncrease: 1
+  timeToDestroy: 5
 --- !u!61 &2317138550888628735
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -113,16 +114,16 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -0.0008211136, y: 0.0054377913}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 5.63, y: 5.64}
-    newSize: {x: 5.63, y: 5.64}
+    oldSize: {x: 2.24, y: 2.2}
+    newSize: {x: 2.24, y: 2.2}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 5.63, y: 5.64}
+  m_Size: {x: 2.2474008, y: 2.1777997}
   m_EdgeRadius: 0
