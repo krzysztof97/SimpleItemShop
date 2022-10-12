@@ -13,6 +13,7 @@ public class PlayerData : ScriptableObject
     public int GetCoins() => coins;
 
     public event Action OnCoinsChanged;
+    public event Action OnItemsChanged;
 
     public void IncreaseCoins(int value)
     {
@@ -24,5 +25,11 @@ public class PlayerData : ScriptableObject
     {
         coins -= value;
         OnCoinsChanged.Invoke();
+    }
+
+    public void AddItem(ItemData item)
+    {
+        items.Add(item);
+        OnItemsChanged.Invoke();
     }
 }

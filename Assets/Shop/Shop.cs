@@ -30,7 +30,7 @@ public class Shop : MonoBehaviour
     public void OnPurchase(ItemData itemData)
     {
         playerData.DecreaseCoins(itemData.price);
-        playerData.items.Add(itemData);
+        playerData.AddItem(itemData);
         SetInteractables();
     }
 
