@@ -41,7 +41,7 @@ public class Shop : MonoBehaviour
         });
     }
 
-    public void SetChildrenEnabled(bool value)
+    private void SetChildrenEnabled(bool value)
     {
         foreach (Transform child in transform.GetComponentInChildren<Transform>())
         {
